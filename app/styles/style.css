@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+    line-height: 1.2rem;
+    color: #24272C;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+body {
+  background-color: #24272C;
+  font-size: 20px;
+  font-family: 'open sans';
+  -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+/*app container*/
+.outer {
+  margin: 100px auto;
+  width: 80%;
+  min-width: 400px;
+  max-width: 850px;
+  height: 80%;
+  border: 10px solid #4F5257;
+  background-color: #363D45;
+    overflow: scroll;
+}
+
+/*application header*/
+.app-header {
+  position: relative;
+  width: 100%;
+  background-color: #D47360;
+  height: 100px;
+}
+
+.app-nav {
+  float: left;
+  height: 100%;
+}
+
+.navigation {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 30px;
+  color: white;
+  text-align: left;
+}
+
+.navigation .title {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.navigation .fa {
+  position: relative;
+  font-size: 0.8rem;
+  bottom: 0.5px;
+  color: rgba(255,255,255,1)
+}
+
+.navigation .number {
+  padding: 0px 13px 0px 5px;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  margin-right: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navigation .number.over {
+  border: none;
+}
+
+.add-btn {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #BE6658;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plus-sign {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/*todo in lijst*/
+.todo-outer {
+    position: relative;
+    display: table;
+    margin: 5%;
+    padding: 10px 0px 10px 20px;
+    background-color: rgba(255,255,255,0.90);
+    border-left: 5px solid red;
+}
+
+.todo-outer:hover {
+    background-color: rgba(255,255,255,1)
+}
+
+.todo-inner {
+    width: auto;
+    height: 100%;
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+}
+
+.todo-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.todo-content {
+    font-size: 1rem;
+
+}
+
+.todo-controls {
+    text-align: right;
+    display: table-cell;
+    width: 120px;
+    height: 100%;
+    vertical-align: middle;
+    padding: 15px
+}
+
+.todo-controls .fa-bars {
+    margin-left: 15px;
+    color: rgba(0,0,0,0.5)
+}
